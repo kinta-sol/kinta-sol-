@@ -2,103 +2,156 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KINTA SOL | Artista & Emprendedora</title>
+  <title>KINTA SOL - Sitio Oficial</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6f0;
+      color: #4b2e2e;
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 20px;
     }
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 2rem;
+      background: linear-gradient(to right, #e89c6d, #f7caa0);
+      padding: 20px;
       text-align: center;
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
     }
-    h1, h2 {
-      color: #c0392b;
+    nav {
+      margin-top: 10px;
     }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      text-align: justify;
-    }
-    .music iframe {
-      width: 100%;
-      height: 315px;
-      margin-bottom: 1.5rem;
-    }
-    .social-links a {
-      display: inline-block;
-      margin-right: 1rem;
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
-      color: #c0392b;
+      color: #4b2e2e;
       font-weight: bold;
     }
-    footer {
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
+    section {
+      margin-top: 40px;
+    }
+    h2 {
+      color: #a85c3a;
+      border-bottom: 2px solid #e89c6d;
+      padding-bottom: 5px;
     }
     .gallery img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
+      width: 30%;
+      margin: 10px;
       border-radius: 8px;
     }
+    .language-toggle {
+      margin-top: 20px;
+      text-align: right;
+    }
+    .language-toggle button {
+      background-color: #e89c6d;
+      border: none;
+      padding: 8px 12px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .english { display: none; }
   </style>
+  <script>
+    function toggleLanguage(lang) {
+      document.querySelector('.spanish').style.display = lang === 'es' ? 'block' : 'none';
+      document.querySelector('.english').style.display = lang === 'en' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
 
   <header>
     <h1>KINTA SOL</h1>
-    <p>Artista, compositora y emprendedora de Guinea Ecuatorial</p>
+    <nav>
+      <a href="#bio">Biografía</a>
+      <a href="#releases">Lanzamientos</a>
+      <a href="#gallery">Galería</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <div class="language-toggle">
+      <button onclick="toggleLanguage('es')">Español</button>
+      <button onclick="toggleLanguage('en')">English</button>
+    </div>
   </header>
 
-  <section>
-    <h2>Biografía</h2>
-    <p>Kinta Sol se ha consolidado como una de las figuras más prometedoras y representativas del panorama musical de Guinea Ecuatorial, llevando la riqueza cultural de su país natal más allá de las fronteras africanas. Su carrera artística representa un puente entre las tradiciones musicales ecuatoguineanas y los sonidos contemporáneos del afro pop internacional...</p>
-    <!-- Puedes seguir agregando el resto del texto aquí o dividirlo en subsecciones si lo prefieres -->
+  <div class="spanish">
+    <section id="bio">
+      <h2>Biografía</h2>
+      <h3>Inicios musicales</h3>
+      <p>KINTA SOL,comenzó su viaje artístico en Guinea Ecuatorial, inspirada por la riqueza cultural de su tierra .</p>
+      <h3>Colaboraciones clave</h3>
+      <p>Ha colaborado con artistas ecuatoguineanos como Jamin Dog Bo , en la cancion Bosques Verdes, con el rapero Adjoguening en su album Menchu,en el primer album de la cantante colaboro con el frances Medy Custos, fortaleciendo su presencia en la escena africana.</p>
+      <h3>Álbum Rompe Cadenas</h3>
+      <p>Su primer álbum, grabado en Francia, marcó un antes y un después en su carrera como artista independiente.</p>
+      <h3>Segundo álbum y evolución artística</h3>
+      <p>Actualmente trabaja en su segundo proyecto musical, explorando nuevas fusiones entre afro pop, flamenco y sonidos contemporáneos.</p>
+      <h3>Visión cultural y educativa</h3>
+      <p>Promueve valores culturales, identidad africana y empoderamiento juvenil a través del arte y la educación.</p>
+    </section>
 
-    <h2>Mi música</h2>
-    <div class="music">
-      <iframe src="https://www.youtube.com/embed/ZBgxynD82Ts" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/xG5cyQgrjzU" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/VBNp6eJWkYQ" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/oD2U2AC7mTg" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <section id="releases">
+      <h2>Próximos lanzamientos</h2>
+      <p>Los primeros singles del segundo album de KINTA SOL ya están disponibles en plataformas de streaming, dos videoclips,actualmente Se está trabajando en el lanzamiento oficial de las fechas de lanzamiento.</p>
+      <ul>
+        <li><strong>PUNTO Y APARTE</strong></li>
+        <li><strong>MUJER</strong></li>
+        <li><strong>ABELEMA</strong></li>
+        <li><strong>SWEET MUSIC</strong></li>
+        <li><strong>DON’T LET ME DOWN</strong></li>
+        <li><strong>SOLOS TÚ Y YO</strong></li>
+      </ul>
+    </section>
+  </div>
 
+  <div class="english">
+    <section id="bio">
+      <h2>Biography</h2>
+      <h3>Musical Beginnings</h3>
+      <p>KINTA SOL,She began her artistic journey in Equatorial Guinea, inspired by the cultural richness of her land.</p>
+      <h3>Key Collaborations</h3>
+      <p>She has collaborated with Equatorial Guinean artists such as Jamin Dog Bo, in the song Bosques Verdes, with the rapper Adjoguening in his album Menchu, in the singer's first album she collaborated with the French Medy Custos, strengthening her presence in the African scene.</p>
+      <h3>Rompe Cadenas Album</h3>
+      <p>Her debut album, recorded in France, marked a turning point in her career as an independent artist.</p>
+      <h3>Second Album & Artistic Evolution</h3>
+      <p>She is currently working on her second musical project, blending Afro pop, flamenco, and contemporary sounds.</p>
+      <h3>Cultural & Educational Vision</h3>
+      <p>She promotes cultural values, African identity, and youth empowerment through art and education.</p>
+    </section>
+
+    <section id="releases">
+      <h2>Upcoming Releases</h2>
+      <p>The first singles by KINTA SOL are now available on streaming platforms, two music videos, and the official release dates are currently being worked on.</p>
+      <ul>
+        <li><strong>PUNTO Y APARTE</strong></li>
+        <li><strong>MUJER</strong></li>
+        <li><strong>ABELEMA</strong></li>
+        <li><strong>SWEET MUSIC</strong></li>
+        <li><strong>DON’T LET ME DOWN</strong></li>
+        <li><strong>SOLOS TÚ Y YO</strong></li>
+      </ul>
+    </section>
+  </div>
+
+  <section id="gallery">
     <h2>Galería</h2>
     <div class="gallery">
-      <img src="foto1.jpg" alt="KINTA SOL en sesión fotográfica">
-      <!-- Puedes añadir más imágenes aquí -->
+      <img src="foto1.jpg" alt="Retrato artístico">
+      <img src="foto2.jpg" alt="Estilo natural">
+      <img src="foto3.jpg" alt="Presentación en vivo">
     </div>
-
-    <h2>Redes sociales</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/kinta_sol_oficial" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@kintasol1" target="_blank">TikTok</a>
-      <a href="https://youtube.com/@kintasol8443" target="_blank">YouTube</a>
-    </div>
-
-    <h2>Contacto</h2>
-    <p>📧 kintaofficielle1@gmail.com</p>
-    <p>📞 +240 222 978 322</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 KINTA SOL | Todos los derechos reservados</p>
-  </footer>
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>WhatsApp: +240 222 978 322</p>
+    <p>Instagram | YouTube</p>
+  </section>
 
 </body>
 </html>
